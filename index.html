@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10251e">
+  <title>Table Stakes — Poker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home"><span aria-hidden="true">♠</span> Table Stakes</a>
+      <button class="icon-button" id="themeBtn" type="button" aria-label="Switch theme">☾</button>
+    </header>
+
+    <section class="intro" id="home">
+      <p class="eyebrow">TEXAS HOLD’EM</p>
+      <h1>Play your <span>hand.</span></h1>
+      <p class="subtitle">A friendly poker table. No real money, just chips and bragging rights.</p>
+    </section>
+
+    <section class="game-card" aria-label="Texas Hold'em poker game">
+      <div class="table" id="table">
+        <div class="table-topline"><span>YOUR CHIPS <strong id="playerChips">500</strong></span><span>POT <strong id="pot">0</strong></span></div>
+        <div class="opponents" id="opponents"></div>
+        <div class="board-label">COMMUNITY CARDS</div>
+        <div class="cards board-cards" id="board" aria-label="Community cards"></div>
+        <p class="status" id="status" role="status" aria-live="polite">Deal a hand to join the table.</p>
+        <div class="player-seat">
+          <div class="player-info"><strong>You</strong><span id="playerSeatChips">500 chips</span></div>
+          <div class="cards" id="playerCards" aria-label="Your cards"></div>
+        </div>
+      </div>
+      <div class="controls" id="controls">
+        <button class="action-button secondary" id="foldBtn" type="button" disabled>Fold</button>
+        <button class="action-button secondary" id="checkBtn" type="button" disabled>Check</button>
+        <button class="action-button raise" id="betBtn" type="button" disabled>Bet 10</button>
+        <button class="action-button deal" id="dealBtn" type="button">Deal Hand</button>
+      </div>
+      <p class="helper-text">Choose to check, bet 10 chips, or fold on each street.</p>
+    </section>
+    <footer>For fun only · No real-money gambling</footer>
+  </main>
+</body>
+</html>
