@@ -20,3 +20,6 @@ The game includes a light/dark theme toggle and a responsive layout for mobile s
 - `script.js` — game logic, opponents, and hand evaluation
 
 Open `index.html` in a browser to play.
+## Live Website
+
+[Play Poker Game](https://man22418.github.io/pocker-gan/)
